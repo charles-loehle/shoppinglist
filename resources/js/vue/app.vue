@@ -36,6 +36,7 @@ export default {
 </script>
 <style scoped>
 .container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     width: 400px;
     margin: auto;
 }

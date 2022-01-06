@@ -36,6 +36,10 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'item.name' => 'required|max:30'
+        ]);
+
         $newItem = new Item;
         $newItem->name = $request->item['name'];
         $newItem->save();

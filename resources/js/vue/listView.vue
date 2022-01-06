@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .item {
     background: #e6e6e6;
-    padding: 50px;
+    padding: 1rem;
     margin-top: 5px;
 }
 </style>

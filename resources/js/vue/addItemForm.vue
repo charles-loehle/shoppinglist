@@ -50,12 +50,12 @@ input {
     background: #f7f7f7;
     border: 0;
     outline: none;
-    padding: 5px;
+    padding: 6px;
     margin-right: 10px;
     width: 100%;
 }
 .plus {
-    font-size: 20px;
+    font-size: 2rem;
 }
 .active {
     color: #00ce25;

@@ -62,5 +62,6 @@ export default {
     border: none;
     color: red;
     outline: none;
+    font-size: 1.25rem;
 }
 </style>
