@@ -1,10 +1,14 @@
 <template>
-    <div class="container">
-        <div class="heading">
-            <h2 class="title">Shopping List</h2>
-            <add-item-form v-on:reloadlist="getList()" />
+    <div class="App container">
+        <div class="flex flex-jcc flex-aic flex-dir-col">
+            <div class="heading">
+                <h2 class="title">Shopping List</h2>
+                <div class="form-container">
+                    <add-item-form v-on:reloadlist="getList()" />
+                </div>
+            </div>
+            <list-view :items="items" v-on:reloadlist="getList()" />
         </div>
-        <list-view :items="items" v-on:reloadlist="getList()" />
     </div>
 </template>
 
@@ -35,15 +39,8 @@ export default {
 };
 </script>
 <style scoped>
-.container {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    width: 400px;
-    margin: auto;
-}
-
 .heading {
     background: #e6e6e6;
-    padding: 10px;
 }
 
 .title {

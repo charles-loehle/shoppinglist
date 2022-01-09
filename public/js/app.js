@@ -12216,6 +12216,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -12418,7 +12422,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.addItem[data-v-cf6e40be] {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\ninput[data-v-cf6e40be] {\r\n    background: #f7f7f7;\r\n    border: 0;\r\n    outline: none;\r\n    padding: 6px;\r\n    margin-right: 10px;\r\n    width: 100%;\n}\n.plus[data-v-cf6e40be] {\r\n    font-size: 2rem;\n}\n.active[data-v-cf6e40be] {\r\n    color: #00ce25;\n}\n.inactive[data-v-cf6e40be] {\r\n    color: #999999;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.AddItemForm[data-v-cf6e40be] {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\ninput[data-v-cf6e40be] {\r\n    background: #f7f7f7;\r\n    border: 0;\r\n    outline: none;\r\n    padding: 6px;\r\n    margin-right: 10px;\r\n    width: 100%;\n}\n.plus[data-v-cf6e40be] {\r\n    font-size: 2rem;\n}\n.active[data-v-cf6e40be] {\r\n    color: #00ce25;\n}\n.inactive[data-v-cf6e40be] {\r\n    color: #999999;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12442,7 +12446,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-27d9b80a] {\r\n    font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n    width: 400px;\r\n    margin: auto;\n}\n.heading[data-v-27d9b80a] {\r\n    background: #e6e6e6;\r\n    padding: 10px;\n}\n.title[data-v-27d9b80a] {\r\n    text-align: center;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.heading[data-v-27d9b80a] {\r\n    background: #e6e6e6;\n}\n.title[data-v-27d9b80a] {\r\n    text-align: center;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12466,7 +12470,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.completed[data-v-1d1939b8] {\r\n    text-decoration: line-through;\r\n    color: #999999;\n}\n.itemText[data-v-1d1939b8] {\r\n    width: 100%;\r\n    margin-left: 20px;\n}\n.item[data-v-1d1939b8] {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.trashcan[data-v-1d1939b8] {\r\n    background: #e6e6e6;\r\n    border: none;\r\n    color: red;\r\n    outline: none;\r\n    font-size: 1.25rem;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.completed[data-v-1d1939b8] {\r\n    text-decoration: line-through;\r\n    color: #999999;\n}\n.itemText[data-v-1d1939b8] {\r\n    width: 100%;\r\n    margin-left: 20px;\n}\n.ListItem[data-v-1d1939b8] {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.trashcan[data-v-1d1939b8] {\r\n    background: #e6e6e6;\r\n    border: none;\r\n    color: red;\r\n    outline: none;\r\n    font-size: 1.25rem;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30757,7 +30761,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "addItem" },
+    { staticClass: "AddItemForm" },
     [
       _c("input", {
         directives: [
@@ -30812,38 +30816,42 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container" },
-    [
-      _c(
-        "div",
-        { staticClass: "heading" },
-        [
+  return _c("div", { staticClass: "App container" }, [
+    _c(
+      "div",
+      { staticClass: "flex flex-jcc flex-aic flex-dir-col" },
+      [
+        _c("div", { staticClass: "heading" }, [
           _c("h2", { staticClass: "title" }, [_vm._v("Shopping List")]),
           _vm._v(" "),
-          _c("add-item-form", {
-            on: {
-              reloadlist: function ($event) {
-                return _vm.getList()
-              },
+          _c(
+            "div",
+            { staticClass: "form-container" },
+            [
+              _c("add-item-form", {
+                on: {
+                  reloadlist: function ($event) {
+                    return _vm.getList()
+                  },
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _c("list-view", {
+          attrs: { items: _vm.items },
+          on: {
+            reloadlist: function ($event) {
+              return _vm.getList()
             },
-          }),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("list-view", {
-        attrs: { items: _vm.items },
-        on: {
-          reloadlist: function ($event) {
-            return _vm.getList()
           },
-        },
-      }),
-    ],
-    1
-  )
+        }),
+      ],
+      1
+    ),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -30868,7 +30876,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "item" }, [
+  return _c("div", { staticClass: "ListItem" }, [
     _c("input", {
       directives: [
         {
@@ -30958,6 +30966,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "ListView flex flex-wrap" },
     _vm._l(_vm.items, function (item, index) {
       return _c(
         "div",

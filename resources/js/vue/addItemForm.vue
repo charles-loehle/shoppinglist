@@ -1,5 +1,5 @@
 <template>
-    <div class="addItem">
+    <div class="AddItemForm">
         <input type="text" v-model="item.name" />
         <font-awesome-icon
             icon="plus-square"
@@ -41,7 +41,7 @@ export default {
 };
 </script>
 <style scoped>
-.addItem {
+.AddItemForm {
     display: flex;
     align-items: center;
     justify-content: center;

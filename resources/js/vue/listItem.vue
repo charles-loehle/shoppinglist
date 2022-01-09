@@ -1,5 +1,5 @@
 <template>
-    <div class="item">
+    <div class="ListItem">
         <input
             type="checkbox"
             @change="updateCheck()"
@@ -52,7 +52,7 @@ export default {
     width: 100%;
     margin-left: 20px;
 }
-.item {
+.ListItem {
     display: flex;
     align-items: center;
     justify-content: center;

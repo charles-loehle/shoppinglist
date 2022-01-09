@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="ListView flex flex-wrap">
         <div v-for="(item, index) in items" :key="index">
             <list-item
                 :item="item"
